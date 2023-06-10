@@ -15,7 +15,7 @@ body:
       label: "Please check that this issue hasn't been reported before."
       description: "The **Label filters** may help make your search more focussed."
       options:
-        - label: "I searched previous [Bug Reports](https://github.com/ricklamers/gpt-code-ui/labels/bug) didn't find any similar reports."
+        - label: "I searched previous Bug Reports didn't find any similar reports."
           required: true
 
   - type: textarea
@@ -83,13 +83,11 @@ body:
       required: true
       
   - type: input
-    id: gpt-code-ui-version
+    id: version
     attributes:
-      label: gpt-code-ui Version
-      description: Which gpt-code-ui version are you using?
+      label: Version (if applicable)
+      description: Which version of this library are you using?
       placeholder: Release v0.0.xx
-    validations:
-      required: true
 
   - type: checkboxes
     id: acknowledgements
@@ -101,7 +99,7 @@ body:
           required: true
         - label: 'I have searched the existing issues to make sure this bug has not been reported yet.'
           required: true
-        - label: 'I am using the latest version of gpt-code-ui.'
+        - label: 'I am using the latest version'
           required: true
         - label: 'I have provided enough information for the maintainers to reproduce and diagnose the issue.'
           required: true
